@@ -11,9 +11,9 @@ Project Overview
 
 Using the dataset Customer Purchasing Behaviors.csv, this project investigates how customer attributes such as:
 
-Age
-Annual Income
-Purchase Amount
+Age,
+Annual Income,
+Purchase Amount, and 
 Purchase Frequency
 
 influence the target variable:
@@ -39,11 +39,13 @@ Statistical summaries
 Identify:
 Categorical attributes
 Numerical attributes
+
 2. Exploratory Data Analysis (EDA)
 Histograms for feature distribution
 Scatterplots for pairwise relationships among numerical variables
 Correlation heatmap for identifying strongly related predictors
 Boxplots for detecting outliers
+
 3. Feature Selection & Dimensionality Reduction
 Select highly correlated predictors:
 age
@@ -52,6 +54,7 @@ purchase_amount
 purchase_frequency
 Standardize predictors using StandardScaler
 Apply PCA to reduce correlated predictors into 1 principal component
+
 4. Linear Regression Modeling
 Split data into training and testing sets
 Train a Linear Regression model using Scikit-learn
